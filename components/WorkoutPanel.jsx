@@ -117,3 +117,4 @@ export default function WorkoutPanel({ title = "ELEVATE_03.1", sequence = "#SEQ.
   );
 }
 
+
