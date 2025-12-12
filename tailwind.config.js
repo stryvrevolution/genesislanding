@@ -9,40 +9,33 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Backgrounds
+        // Backgrounds - Clinical Technical (Light)
         bg: {
-          primary: '#000000',
-          secondary: '#0A0A0A',
-          tertiary: '#1A1A1A',
-          elevated: '#2B2B2B',
-        },
-        // Overlay/Panels
-        overlay: {
-          offWhite: '#F5F5F0',
-          beige: '#E8E8E3',
-          cream: '#FAFAF5',
+          primary: '#F5F5F2',      // Blanc cassé très clair - fond principal
+          secondary: '#FFFFFF',    // Blanc pur - sections alternées
+          tertiary: '#FAFAF8',    // Blanc cassé léger - cards/overlays
+          elevated: '#F0F0ED',    // Gris très clair - éléments surélevés
         },
         // Text Colors
         text: {
-          primary: '#000000',
-          secondary: '#1A1A1A',
-          light: '#FFFFFF',
-          muted: '#666666',
-          accent: '#E63946',
+          primary: '#000000',      // Noir pur - texte principal
+          secondary: '#1A1A1A',     // Gris très foncé - texte secondaire
+          muted: '#666666',         // Gris moyen - texte désactivé/secondaire
+          accent: '#E63946',       // Rouge technique - accents
         },
-        // Accents & CTAs
+        // Accents & CTAs - Rouge technique fin et précis
         accent: {
-          primary: '#E63946',
-          secondary: '#DC143C',
-          dark: '#C41E3A',
-          light: '#FF4757',
+          primary: '#E63946',      // Rouge technique principal
+          secondary: '#DC143C',    // Rouge accent profond
+          dark: '#C41E3A',         // Rouge foncé - hover states
+          light: '#FF4757',         // Rouge clair - highlights
         },
-        // Borders
+        // Borders - Subtils sur fond clair
         border: {
-          dark: '#2A2A2A',
-          medium: '#404040',
-          light: '#666666',
-          accent: '#E63946',
+          light: '#E5E5E5',        // Bordure claire
+          medium: '#CCCCCC',       // Bordure moyenne
+          dark: '#999999',         // Bordure foncée
+          accent: '#E63946',       // Bordure accent rouge
         },
         // Legacy support
         red: {
@@ -50,15 +43,21 @@ module.exports = {
           700: '#D62839',
         },
         gray: {
-          950: '#0F0F0F',
+          50: '#F5F5F2',
+          100: '#F0F0ED',
+          200: '#E5E5E5',
+          300: '#CCCCCC',
+          950: '#000000',
         }
       },
       fontFamily: {
-        primary: ['Rajdhani', 'sans-serif'],
-        secondary: ['Orbitron', 'sans-serif'],
-        body: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-        display: ['Barlow Condensed', 'sans-serif'],
+        // Monospace pour sous-titres et textes techniques
+        mono: ['JetBrains Mono', 'Roboto Mono', 'Courier New', 'monospace'],
+        // Sans-serif grasse uniquement pour très gros titres
+        display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        // Legacy
+        primary: ['JetBrains Mono', 'monospace'],
+        body: ['JetBrains Mono', 'monospace'],
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
       letterSpacing: {
